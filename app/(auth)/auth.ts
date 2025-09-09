@@ -37,6 +37,7 @@ export const {
   signOut,
 } = NextAuth({
   ...authConfig,
+  secret:process.env.NEXTAUTH_SECRET,
   providers: [
     Credentials({
       credentials: {},
